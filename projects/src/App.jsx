@@ -1,11 +1,11 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router'
 
-import Home from './pages/home'
+import Home from './pages/Home'
 import ComponentsBtstrp from "./pages/componentsBtsrp";
-import Card from "./pages/card";
+//import Card from "./pages/card";
 import Calculator from "./pages/calculator";
-import TodoList from "./pages/todoList";
-import FormStudents from "./pages/formStudents";
+//import TodoList from "./pages/todoList";
+//import FormStudents from "./pages/formStudents";
 import Nav from "./components/nav"
 
 function App() {
@@ -16,6 +16,8 @@ function App() {
     <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/componentsBtsrp" element={<ComponentsBtstrp/>}/>
+        <Route path="/calculator" element={<Calculator/>}/>
       </Routes>
     </Router>
     
